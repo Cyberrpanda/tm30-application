@@ -1,13 +1,76 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  padding-top: 20px;
+  padding-left: 30px;
+}
+  
+.sign_content{
+  display: flex;
+  
+}
+
+.left_sign{
+  background-color: #2d90ec;
+  height: 100vh;
+  width: 50%;
+  color: white;
+}
+
+.left_sign h3{
+  text-align: center;
+}
+
+.left_sign p{
+  text-align: center;
+}
+
+.left_sign-content{
+  padding-top: 9.5rem;
+  
+
+}
+
+.img-group{
+  width: 400px;
+  height: 400px;
+  
+}
+
+.right_sign{
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 15rem;
+  
+}
+
+.right_sign h3{
+  padding-top: 27px;
+}
+
+.right_sign-contnet{
+ 
+}
+
+.form_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  background-color: #2d90ec;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #1263af;
+}
+
+.btn-submit{
+
 }
