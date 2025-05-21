@@ -4,9 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
 .logo{
   padding-top: 20px;
   padding-left: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.logo2{
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo2:hover{
+  transform: scale(1.2);
 }
   
 .sign_content{
@@ -21,8 +39,10 @@
   color: white;
 }
 
-.left_sign h3{
+.left_sign h2{
   text-align: center;
+  
+  padding-bottom: 7px;
 }
 
 .left_sign p{
@@ -30,47 +50,98 @@
 }
 
 .left_sign-content{
-  padding-top: 9.5rem;
+  padding-top: 5rem;
   
 
 }
 
 .img-group{
-  width: 400px;
-  height: 400px;
-  
+  width: 580px;
+  height: 450px;  
+  padding-left: 99px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-group:hover{
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .right_sign{
   background-color: white;
   margin: 0 auto;
-  padding-top: 15rem;
+  padding-top: 12rem;
   
 }
 
-.right_sign h3{
+.right_sign h2{
   padding-top: 27px;
+  padding-bottom: 10px;
 }
 
-.right_sign-contnet{
+.right_sign p{
+  color: #6B7280;
+}
+
+
+.right_sign-content{
  
 }
 
 .form_content{
   display: flex;
+  padding-top: 12px;
   flex-direction: column;
 }
 
-.btn{
-  background-color: #2d90ec;
-  text-align: center;
-  cursor: pointer;
+.form_content h6 {
+  padding-bottom: 6px;
 }
 
-.btn:hover{
-  background-color: #1263af;
+.form_content input {
+  border: 1px solid #6B7280;
+  padding: 10px;
+  color: #e3e3e3;
+  border-radius: 3px;
+}
+
+.btn{
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .btn-submit{
-
+  background-color: #2d90ec;
 }
+
+.btn-submit:hover{
+  background-color: #1263af;
+}
+
+.btn-google{
+  border: 1px solid #6B7280;
+  padding: 5px;
+}
+
+.btn-google span{
+ padding-bottom: 5px;
+}
+
+.google{
+  width: 23px;
+  height: 22.5px;
+  padding-top: 5px;
+}
+
+.account-style p{
+  padding-top: 10px;
+  color: black;
+}
+
+.account-style span {
+  color: #2d90ec;
+  cursor: pointer;
+}
+
