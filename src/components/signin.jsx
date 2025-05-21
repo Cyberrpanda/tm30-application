@@ -1,10 +1,15 @@
 import '../index.css';
+import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/IMGPP.png";
 import logo2 from "../assets/IMGPP2.png";
 import left_img from "../assets/Group 18.png";
 import google from "../assets/google.png";
 import password from "../assets/password.png";
 export default function Signin(){
+    const navigate = useNavigate();
+    const passwordRef = useRef(null);
+
     return (
         <div className='sign_content'>
            <div className='left_sign'>
@@ -33,7 +38,16 @@ export default function Signin(){
                         <input type="email" placeholder='Enter Email' required/>
                         <br />
                         <h6>Password</h6>
-                        <input type="password" placeholder='Enter Password' required/>
+                        <div className='password-wrapper'>
+                          <input ref={passwordRef} type="password" placeholder='Enter Password' required />
+                          <img src={password} alt="password" className='password' 
+                          onClick={() => {
+                            const input = passwordRef.current;
+                            input.type = input.type === "password" ? "text" : "password";
+                            }}
+                          />
+                        </div>
+                        
                     </form>
                     <br />
                     <div className='btn btn-submit'>
@@ -47,7 +61,8 @@ export default function Signin(){
 
                     <div className='account-style'>
                     <p>
-                        Need an account ? <span>Create an account</span>
+                        Need an account ?{" "} 
+                        <span onClick={() => navigate('/signup')}>Create an account</span>
                     </p>
                     </div>
                     
