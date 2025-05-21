@@ -199,7 +199,7 @@ body {
     padding-left: 40px;
   }
 
-  .left_sign, .right_sign, .right_sign2{
+  .left_sign, .right_sign .right_sign2{
     min-height: 100vh;
     height: auto;
   }
@@ -231,7 +231,6 @@ body {
   }
 }
 
-/*Additional media queires for tablet view*/
 
 
 @media (max-width: 600px) {
